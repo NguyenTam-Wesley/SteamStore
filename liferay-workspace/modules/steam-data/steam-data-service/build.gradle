@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:steam-data:steam-data-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../steam-data-api/src/main/java"
+}
+
+group = "com.liferay.steamdata"

@@ -1,0 +1,10 @@
+Bundle-Name: steam-data-api
+Bundle-SymbolicName: com.liferay.steamdata.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.steamdata.exception,\
+	com.liferay.steamdata.model,\
+	com.liferay.steamdata.service,\
+	com.liferay.steamdata.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../steam-data-service/service.xml

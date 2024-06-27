@@ -1,0 +1,1 @@
+create index IX_A9E17123 on Liferay_Publisher (uuid_[$COLUMN_LENGTH:75$]);

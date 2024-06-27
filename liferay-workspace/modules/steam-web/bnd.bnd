@@ -1,0 +1,4 @@
+Bundle-Name: steam-web
+Bundle-SymbolicName: com.liferay.steamweb
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.steamweb.constants

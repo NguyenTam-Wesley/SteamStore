@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.steamdata.model.Game">
+		<field name="appId" type="long" />
+		<field name="publisherId" type="String" />
+		<field name="title" type="String" />
+		<field name="releaseDate" type="Date" />
+		<field name="price" type="double" />
+		<field name="aboutDescription" type="String" />
+	</model>
+	<model name="com.liferay.steamdata.model.Publisher">
+		<field name="uuid" type="String" />
+		<field name="publisherId" type="String" />
+		<field name="publisherName" type="String" />
+		<field name="linkWebsite" type="String" />
+		<field name="publisherInfo" type="String" />
+	</model>
+</model-hints>

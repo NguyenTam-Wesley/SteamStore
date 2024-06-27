@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.liferay.steamdata" auto-namespace-tables="true">
+    <namespace>Liferay</namespace>
+
+    <entity local-service="true" name="Publisher" remote-service="false" uuid="true">
+        <column name="publisherId" type="String" primary="true"></column>
+        <column name="publisherName" type="String"></column>
+        <column name="linkWebsite" type="String"></column>
+        <column name="publisherInfo" type="String"></column>
+    </entity>
+	
+    <entity name="Game" local-service="true" remote-service="false">
+        <column name="appId" type="long" primary="true"></column>
+        <column name="publisherId" type="String"></column>
+        <column name="title" type="String"></column>
+        <column name="releaseDate" type="Date"></column>
+        <column name="price" type="double"></column>
+        <column name="aboutDescription" type="String"></column>
+        <reference entity="Publisher" package-path="com.liferay.steamdata"></reference>
+    </entity>
+</service-builder>
